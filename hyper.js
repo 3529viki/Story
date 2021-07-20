@@ -153,4 +153,83 @@ Date:   Tue Jul 20 01:16:18 2021 +0530
     Complete chapter 1
 
 Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/Story (master)
-$  
+
+
+
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git diff chapter3.txt
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git diff chapter2.txt
+diff --git a/chapter2.txt b/chapter2.txt
+index 1633e0d..293bae7 100644
+--- a/chapter2.txt
++++ b/chapter2.txt
+@@ -1 +1 @@
+-It was the age of wisdom, it was the age of foolishness.
+\ No newline at end of file
++gufge  euugfg efguv uegcuk ugugc ugeuc2g.
+\ No newline at end of file
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git checkout chapter2.txt
+Updated 1 path from the index
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git log
+commit 5a55bae2d6b620535f8a61f7ec9f0141f1b5ec0a (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Tue Jul 20 23:02:57 2021 +0530
+
+    Complete chapter 2 and 3
+
+commit 8354eac23e86777da9746f6732d2758688e676c8
+Author: Your Name <you@example.com>
+Date:   Tue Jul 20 22:57:48 2021 +0530
+
+    Complete chapter 1
+
+
+
+
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git push -u origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ Host key verification failed.
+it remote add origin ^C
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$  git remote add origin https://github.com/3529viki/Story.git
+error: remote origin already exists.
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ ^C
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git remote remove origin
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$  git remote add origin https://github.com/3529viki/Story.git
+
+Vikash singh@DESKTOP-DEH6M1N MINGW64 /D/VIKASH/story (master)
+$ git push -u origin master
+Select an authentication method for 'https://github.com/':
+  1. Web browser (default)
+  2. Personal access token
+option (enter for default):
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.56 KiB | 797.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/3529viki/Story.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
